@@ -12,7 +12,7 @@ After=network.target
 User=root
 Group=root
 
-WorkingDirectory=/home/akadmin/pack/wetty # CHANGE ME
+WorkingDirectory=/usr/lib/node_modules/wetty
 ExecStart=/usr/bin/node app.js -p 9123 --host 127.0.0.1
 
 [Install]
