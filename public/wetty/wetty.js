@@ -36,6 +36,8 @@ socket.on('connect', function() {
         term.prefs_.set('ctrl-c-copy', true);
         term.prefs_.set('ctrl-v-paste', true);
         term.prefs_.set('use-default-window-copy', true);
+        term.prefs_.set('font-family', '"InputMonoCondensed", "InputMono", "Input", Inconsolata-dz, Consolas, monospace');
+        term.prefs_.set('font-size', 11);
 
         term.runCommandClass(Wetty, document.location.hash.substr(1));
         socket.emit('resize', {
